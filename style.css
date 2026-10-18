@@ -1,0 +1,67 @@
+* { box-sizing: border-box; }
+:root { color-scheme: dark; font-family: Arial, Helvetica, sans-serif; }
+body { margin: 0; min-height: 100vh; background: #0b1014; color: #f5f5f5; }
+.page { min-height: calc(100vh - 54px); display: grid; grid-template-columns: 57% 43%; }
+.promo { position: relative; min-height: 720px; padding: 52px; background: #0b1014; border-right: 2px solid #45474b; overflow: hidden; }
+.instagram-mark { width: 66px; height: 66px; border: 6px solid transparent; border-radius: 20px; background: linear-gradient(#0b1014,#0b1014) padding-box, linear-gradient(135deg,#833ab4 5%,#fd1d8d 45%,#fcb045 90%) border-box; position: relative; }
+.camera-lens { position: absolute; width: 34px; height: 34px; border: 5px solid #f13b91; border-radius: 50%; left: 10px; top: 10px; }
+.camera-dot { position: absolute; width: 7px; height: 7px; background: #f13b91; border-radius: 50%; right: 8px; top: 7px; }
+.promo-content { max-width: 690px; margin: 48px auto 0; text-align: center; }
+h1 { font-size: clamp(28px, 3vw, 46px); line-height: 1.55; font-weight: 400; margin: 0 auto 26px; letter-spacing: -.7px; }
+h1 span { display: inline-block; background: linear-gradient(90deg,#ff7448,#ff0084); color: transparent; background-clip: text; }
+.collage { position: relative; width: 360px; height: 330px; margin: 0 auto; }
+.photo { position: absolute; border-radius: 24px; overflow: hidden; box-shadow: 0 14px 35px #0007; }
+.photo-back { width: 160px; height: 225px; top: 50px; background: linear-gradient(150deg,#f5d69d,#4ab3c6 48%,#177c57); }
+.photo-back span { position: absolute; right: 12px; top: 12px; background: #ffffffc9; color: #ef4c83; border-radius: 20px; padding: 6px 10px; }
+.photo-one { left: 30px; transform: rotate(-8deg); }
+.photo-two { right: 28px; transform: rotate(8deg); background: linear-gradient(145deg,#6fd0ef,#1e9c5a 45%,#f3c44e); }
+.photo-front { width: 180px; height: 260px; left: 90px; top: 20px; border: 1px solid #ffffff50; background: linear-gradient(#e8c997 0 28%,#7db9d2 28% 43%,#c49b54 43% 100%); }
+.sunset { height: 44%; background: linear-gradient(160deg,#efd5a6,#f5e6cb 42%,#8bbfd2); border-bottom: 4px solid #8e7959; }
+.people { position: absolute; bottom: 28px; left: 10px; right: 10px; height: 120px; display: flex; align-items: end; justify-content: center; gap: 4px; }
+.person { width: 36px; height: 90px; border-radius: 20px 20px 8px 8px; background: linear-gradient(#6b3b2a 0 18%,#e4b28b 18% 42%,#f1c44f 42%); }
+.p2 { height: 110px; background: linear-gradient(#9b684c 0 18%,#e9bd96 18% 42%,#f4d98a 42%); }
+.p3 { height: 100px; background: linear-gradient(#322d2c 0 20%,#9b6446 20% 42%,#eee 42%); }
+.p4 { height: 82px; background: linear-gradient(#3b2d28 0 20%,#c98d68 20% 42%,#318d72 42%); }
+.photo-caption { position: absolute; bottom: 10px; left: 12px; right: 12px; border: 2px solid #ffffffd9; border-radius: 15px; padding: 5px; font-size: 10px; text-align: center; }
+.heart { position: absolute; left: 8px; top: 180px; font-size: 48px; color: #ff0069; transform: rotate(-18deg); }
+.sparkle { position: absolute; right: 0; top: 120px; padding: 8px 12px; border-radius: 20px; color: white; background: #1fca65; transform: rotate(12deg); }
+.bubble { position: absolute; left: 80px; top: 35px; padding: 8px 12px; border-radius: 18px; background: white; color: #8e44ad; transform: rotate(-8deg); }
+.login-panel { display: flex; align-items: flex-start; justify-content: center; padding: 116px 8% 50px; background: #1f1f1f; }
+.login-box { width: 100%; max-width: 610px; }
+h2 { font-size: 18px; margin: 0 0 28px; font-weight: 600; }
+.field { display: block; height: 67px; border: 1px solid #4b4b4b; border-radius: 19px; padding: 9px 18px; margin-bottom: 13px; color: #b8c9d8; }
+.field:focus-within { border-color: #aaa; }
+.field span { display: block; font-size: 14px; margin-bottom: 3px; }
+.field input { width: 100%; border: 0; outline: 0; color: white; background: transparent; font-size: 16px; }
+.password-field { padding-top: 22px; }
+.password-field span { margin-bottom: 0; }
+.login-button, .facebook-button, .create-button { width: 100%; height: 49px; border-radius: 28px; font-size: 16px; font-weight: 600; cursor: default; }
+.login-button { margin-top: 13px; color: #9baec4; background: #174477; border: 0; }
+.forgot { display: block; text-align: center; color: #f5f5f5; font-size: 16px; text-decoration: none; margin: 27px 0 73px; font-weight: 600; }
+.lower-actions { display: grid; gap: 13px; }
+.facebook-button { background: #292a2c; color: #dce0e5; border: 0; font-weight: 400; }
+.fb-icon { display: inline-grid; place-items: center; width: 15px; height: 15px; border-radius: 50%; background: #1687f8; color: white; font-weight: bold; margin-right: 7px; }
+.create-button { color: #45a5ff; border: 1px solid #45a5ff; background: transparent; }
+.meta-brand { text-align: center; margin-top: 27px; color: #e1e4e8; font-size: 18px; }
+.meta-symbol { font-size: 27px; font-weight: 700; vertical-align: -3px; margin-right: 3px; }
+.demo-note { color: #969696; text-align: center; font-size: 11px; margin-top: 24px; }
+.footer { min-height: 54px; border-top: 1px solid #444; display: flex; justify-content: center; align-items: center; padding: 14px 20px; }
+.footer nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px 18px; }
+.footer a { color: #aeb6bf; text-decoration: none; font-size: 12px; }
+@media (max-width: 900px) {
+  .page { grid-template-columns: 1fr; }
+  .promo { min-height: 530px; padding: 28px; border-right: 0; border-bottom: 1px solid #45474b; }
+  .instagram-mark { width: 54px; height: 54px; border-radius: 16px; }
+  .camera-lens { width: 28px; height: 28px; left: 8px; top: 8px; }
+  .promo-content { margin-top: 22px; }
+  .collage { transform: scale(.82); transform-origin: top center; margin-bottom: -55px; }
+  .login-panel { padding: 42px 24px; }
+  .forgot { margin-bottom: 42px; }
+}
+@media (max-width: 480px) {
+  .promo { min-height: 440px; padding: 22px; }
+  h1 { font-size: 28px; line-height: 1.35; }
+  .collage { transform: scale(.68); margin-bottom: -95px; }
+  .login-panel { padding: 32px 20px; }
+  .footer nav { gap: 9px 12px; }
+}
